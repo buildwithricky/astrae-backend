@@ -12,7 +12,7 @@ import { specs, swaggerUi } from './swagger.js';
 
 const app = express();
 const PORT = process.env.PORT || 5025;
-const SERVER_NAME = "CertZilla AI";
+const SERVER_NAME = "Astraae AI";
 const PRIMARY_COLOR = "#FE4737";
 const SECONDARY_COLOR = "#333333";
 const LIGHT_COLOR = "#FFF5F4";
@@ -34,7 +34,7 @@ app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(specs, {
     .swagger-ui .btn.execute { background-color: #FE4737; border-color: #FE4737; }
     .swagger-ui .btn.execute:hover { background-color: #e03d2f; border-color: #e03d2f; }
   `,
-  customSiteTitle: 'CertZilla AI API Documentation',
+  customSiteTitle: 'Astrae AI API Documentation',
   customfavIcon: '/favicon.ico',
   swaggerOptions: {
     persistAuthorization: true,
@@ -281,43 +281,8 @@ app.get('/', (req, res) => {
       </style>
     </head>
     <body>
-      <div class="container animate__animated animate__fadeIn">
-        <h1>Welcome to <span class="logo">${SERVER_NAME}</span> Server</h1>
-        <p>This server is currently running and ready to handle requests.</p>
-        
-        <div class="server-info animate__animated animate__fadeInUp">
-          <h2>Server Information</h2>
-          <p><strong>Server Name:</strong> ${SERVER_NAME}</p>
-          <p><strong>Port:</strong> ${PORT}</p>
-          <p><strong>Status:</strong> <span class="pulse"></span><span class="status">Running</span></p>
-        </div>
-        
-        <h2 class="animate__animated animate__fadeIn">Technologies Used</h2>
-        <div class="tech-list">
-          <span class="tech-item animate__animated animate__fadeInLeft" style="animation-delay: 0.1s">Node.js</span>
-          <span class="tech-item animate__animated animate__fadeInLeft" style="animation-delay: 0.2s">Express</span>
-          <span class="tech-item animate__animated animate__fadeInLeft" style="animation-delay: 0.3s">Mongoose</span>
-          <span class="tech-item animate__animated animate__fadeInLeft" style="animation-delay: 0.4s">MongoDB</span>
-        </div>
-        
-        <h2 class="animate__animated animate__fadeIn">Key Features</h2>
-        <div>
-          <div class="feature animate__animated animate__fadeInRight" style="animation-delay: 0.1s">
-            <div class="feature-icon">⚡</div>
-            <div class="feature-text">
-              <div class="feature-title">High Performance</div>
-              <div class="feature-desc">Optimized for fast response times and scalability</div>
-            </div>
-          </div>
-          <div class="feature animate__animated animate__fadeInRight" style="animation-delay: 0.2s">
-            <div class="feature-icon">🔒</div>
-            <div class="feature-text">
-              <div class="feature-title">Secure Authentication</div>
-              <div class="feature-desc">Protected user auth routes with industry standards</div>
-            </div>
-          </div>
-         
-        </div>
+      <div>
+      Astae APi CLIENT
       </div>
     </body>
     </html>
